@@ -82,7 +82,7 @@ def get_entity(entity):
 @app.route("/clear", methods=['POST','GET'])
 def clear():
     myWorld.clear()
-    return ("",200)
+    return world()
 
 if __name__ == "__main__":
     app.run()
