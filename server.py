@@ -69,7 +69,7 @@ def hello():
 @app.route("/entity/<entity>", methods=['POST','PUT'])
 def update(entity):
     myWorld.set(entity, flask_post_json())
-    return (myWorld.get(entity), 200, [("Content-Type","application/json")])
+    return get_entity(entity)
 
 @app.route("/world", methods=['POST','GET'])
 def world():
