@@ -75,7 +75,7 @@ def update(entity):
 def world():
     return (myWorld.world(), 200, [("Content-Type","application/json")])
 
-@app.route("/entity/<entity>")
+@app.route("/entity/<entity>", methods=['GET'])
 def get_entity(entity):
     return (myWorld.get(entity), 200, [("Content-Type","application/json")])
 
