@@ -50,7 +50,7 @@ function drawCircle(context,entity) {
         var y = entity["y"];
         fillStyle = entity["colour"];
         strokeStyle = fillStyle;
-        arc(x, y, (entity["radius"])?entity["radius"]:50, 0, 2.0 * Math.PI, false);
+        arc(x, y, (entity["radius"] )?((entity["radius"] > 0)?entity["radius"]:0):50, 0, 2.0 * Math.PI, false);
         stroke();
     }
 }
