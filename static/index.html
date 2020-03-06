@@ -196,8 +196,8 @@ function update() {
   fetch("/world", {method: 'GET'})
   .then(function(response) {return response.json();})
   .then(function(jsonWorld) {world = jsonWorld;})
-  .then( () => renderFrame())
   .catch( (error) => console.log(error));
+  renderFrame();
 }
 
 
