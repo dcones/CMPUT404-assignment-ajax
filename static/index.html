@@ -32,10 +32,10 @@ var W = canvas.width  = window.innerWidth-6;
 var H = canvas.height = window.innerHeight-50;
 
 world = {};
-sizeCounter = 6;
-sizeIncrement = 1;
 maxSize = 60;
-minSize = 8;
+minSize = 10;
+sizeIncrement = 1;
+sizeCounter = (minSize + maxSize)/2;
 maxColour = 12844691;
 minColour = 3767192;
 colourCounter = minColour;
